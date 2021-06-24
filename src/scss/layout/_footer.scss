@@ -1,0 +1,232 @@
+/* footer */
+footer {
+    position:relative;
+    padding:50px 0 60px;
+    background:#383838;
+    @include tablet {
+        padding:30px 0 30px;
+    }
+    @include mobile {
+        padding-top:65px;
+    }
+    .foot-cont {
+        @include contArea;
+        .link-lists {
+            margin-bottom:25px;
+            font-size:0;
+            li {
+                display:inline-block;
+                vertical-align:top;
+                a {
+                    display:inline-block;
+                    font-size:14px;
+                    line-height:20px;
+                    color:rgba($white, 0.6);
+                    vertical-align:middle;
+                    @include skew;
+                    @include mobile {
+                        font-size:12px;
+                    }
+                }
+                &::after {
+                    content:' ';
+                    display:inline-block;
+                    vertical-align:middle;
+                    width:1px;
+                    height:12px;
+                    margin:0 20px;
+                    background:rgba($white, 0.6);
+                    @include mobile {
+                        margin:0 6px;
+                    }
+                }
+                &:last-child::after {
+                    display:none;
+                }
+            }
+        }
+        .foot-bottom {
+            display:flex;
+            @include tablet {
+                flex-wrap:wrap;
+            }
+            .box {
+                margin-left:110px;
+                &:first-child {
+                    margin-left:0;
+                }
+                &:last-child {
+                    margin-left:auto;
+                }
+                @include tablet {
+                    margin-left:0;
+                    &:nth-child(2) {
+                        order:2;
+                        width:100%;
+                        margin-top:30px;
+                    }
+                }
+                @include mobile {
+                    &:last-child {
+                        order:3;
+                        margin-left:0;
+                        margin-top:30px;
+                        width:100%;
+                    }
+                }
+                .tit {
+                    margin-bottom:6px;
+                    font-size:14px;
+                    font-weight:900;
+                    color:$white;
+                    @include skew;
+                    @include mobile {
+                        font-size:12px;
+                    }
+                }
+                .desc {
+                    p {
+                        color:rgba($white, 0.6);
+                        font-size:14px;
+                        line-height:1.3em;
+                        @include skew;
+                        white-space:nowrap;
+                        @include mobile {
+                            font-size:12px;
+                        }
+                    }
+                }
+                .copy {
+                    margin-top:20px;
+                    color:rgba($white, 0.6);
+                    font-size:14px;
+                    @include skew;
+                    @include mobile {
+                        font-size:12px;
+                    }
+                }
+                .call {
+                    margin-top:15px;
+                    color:$white;
+                    font-size:30px;
+                    font-weight:900;
+                    @include mobile {
+                        margin-top:0;
+                        font-size:24px;
+                    }
+                }
+                .time {
+                    margin-top:5px;
+                    color:$white;
+                    font-size:14px;
+                    @include skew;
+                    @include mobile {
+                        font-size:12px;
+                    }
+                }
+                .dropdown {
+                    position:relative;
+                    width:100%;
+                    @include mobile {
+                        position:absolute;
+                        top:15px;
+                        left:12px;
+                        right:12px;
+                        width:auto;
+                    }
+                    .btn-toggle {
+                        position:relative;
+                        display:block;
+                        width:100%;
+                        padding-right:16px;
+                        padding-bottom:10px;
+                        border-bottom:1px solid rgba($white, 0.6);
+                        color:$white;
+                        font-size:14px;
+                        text-align:left;
+                        @include skew;
+                        @include mobile {
+                            font-size:13px;
+                        }
+                        &::after {
+                            content:' ';
+                            position:absolute;
+                            width:6px;
+                            height:6px;
+                            top:2px;
+                            right:3px;
+                            border:1px solid $white;
+                            border-top:none;
+                            border-right:none;
+                            transform:rotate(-45deg);
+                        }
+                    }
+                    .lists {
+                        display:none;
+                        position:absolute;
+                        top:100%;
+                        left:0;
+                        right:0;
+                        border:1px solid rgba($white, 0.6);
+                        border-top:none;
+                        z-index:10;
+                        li {
+                            border-top:1px solid rgba($white, 0.6);
+                            &:first-child {
+                                border-top:none;
+                            }
+                            a {
+                                display:block;
+                                padding:0 6px;
+                                font-size:14px;
+                                line-height:30px;
+                                @include skew;
+                                color:$cont;
+                                background:rgba($white, 0.9);
+                                white-space:nowrap;
+                                @include mobile {
+                                    font-size:12px;
+                                }
+                            }
+                        }
+                    }
+                    &.open .lists {
+                        display:block;
+                    }
+                }
+                .sns-lists {
+                    margin-top:20px;
+                    font-size:0;
+                    @include mobile {
+                        margin-top:0;
+                    }
+                    li {
+                        display:inline-block;
+                        vertical-align:top;
+                        margin-left:20px;
+                        &:first-child {
+                            margin-left:0;
+                        }
+                        a {
+                            display:block;
+                            width:35px;
+                            height:35px;
+                            background-repeat:no-repeat;
+                            background-size:100%;
+                            background-position:center;
+                            @for $i from 1 through 5 {
+                                &.sns0#{$i} {
+                                    background-image:url('/images/icon/icon-footsns0#{$i}.png');
+                                }
+                            }
+                            @include mobile {
+                                width:30px;
+                                height:30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

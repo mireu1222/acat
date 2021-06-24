@@ -1,0 +1,179 @@
+/* form */
+.form-wrap {
+    .row {
+        display:flex;
+        align-items:center;
+        margin-top:5px;
+        &:first-child {
+            margin-top:0;
+        }
+        > * {
+            margin-left:5px;
+            &:first-child {
+                margin-left:0;
+            }
+        }
+        .form-control.auto {
+            width:50%;
+            max-width:200px;
+            @include mobile {
+                width:100%;
+            }
+        }
+        .form-control.half {
+            flex:1;
+            max-width:360px;
+        }
+        .btn {
+            font-size:14px;
+            @include mobile {
+                font-size:13px;
+            }
+        }
+        > label {
+            padding-right:20px;
+            @include font;
+            font-weight:700;
+        }
+        &.m-col {
+            @include mobile {
+                flex-direction:column;
+                > * {
+                    width:100%;
+                    margin:0;
+                    margin-top:5px;
+                    &:first-child {
+                        margin-top:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.d-flex-btn {
+    display:flex;
+    .form-control {
+        flex:1 1 auto;
+    }
+    .btn {
+        margin-left:5px;
+    }
+    .num-input {
+        flex:1 1 auto;
+        position:relative;
+        .count {
+            position:absolute;
+            top:50%;
+            right:15px;
+            font-size:14px;
+            line-height:1;
+            @include skew;
+            color:$point;
+            transform:translateY(-50%);
+        }
+    }
+}
+
+/* search */
+.list-filter {
+    display:flex;
+    align-items:flex-end;
+    margin-bottom:15px;
+    @include mobile {
+        flex-wrap:wrap;
+        margin-bottom:5px;
+    }
+    .search-wrap {
+        display:flex;
+        width:60%;
+        max-width:420px;
+        margin-left:auto;
+        border-radius:25px;
+        box-shadow:0px 0px 15px 0px rgba(217, 217, 217, 0.75);
+        overflow:hidden;
+        @include mobile {
+            width:100%;
+            max-width:none;
+        }
+        .input-wrap {
+            flex:1;
+            input {
+                height:50px;
+                padding:12px 30px;
+                border-radius:0;
+                border-color:transparent;
+                &::placeholder,
+                &::-webkit-input-placeholder {
+                    @include font;
+                }
+                @include mobile {
+                    height:40px;
+                    padding:10px 20px;
+                }
+            }
+        }
+        .btn-search {
+            display:block;
+            width:50px;
+            height:50px;
+            background:url('/images/icon/icon-search.png') left center no-repeat;
+            @include mobile {
+                width:40px;
+                height:40px;
+                background-size:20px;
+            }
+        }
+    }
+    .btn-write {
+        height:50px;
+        margin-left:10px;
+        border-radius:25px;
+        line-height:48px;
+        @include mobile {
+            height:40px;
+            margin-top:10px;
+            margin-left:auto;
+            border-radius:20px;
+            line-height:38px;
+            order:2;
+        }
+    }
+    .total {
+        order:-1;
+        @include font-sm;
+        em {
+            font-weight:700;
+        }
+        @include mobile {
+            order:1;
+            margin-top:20px;
+        }
+    }
+}
+
+/* file upload */
+.inputfile-wrap {
+    position:relative;
+    max-width:500px;
+    font-size:0;
+    input[type="file"] {
+        position:absolute;
+        width:1px;
+        height:1px;
+        margin:-1px;
+        padding:0;
+        border:0;
+        overflow:hidden;
+        clip:rect(0, 0, 0, 0);
+    }
+    .form-control {
+        display:inline-block;
+        width:calc(100% - 95px);
+    }
+    label {
+        display:inline-block;
+        width:90px;
+        margin-left:5px;
+    }
+}

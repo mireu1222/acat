@@ -1,0 +1,212 @@
+<div class="tbl-wrap">
+    <table class="table row-tbl">
+        <colgroup>
+            <col class="col1">
+            <col>
+        </colgroup>
+        <tbody>
+            @@if(!context.review){
+                @@if(context.sub0701){
+                    <tr>
+                        <th scope="row"><p class="label essen">세부 과목 선택</p></th>
+                        <td>
+                            @@include('./modules/slt-list.html', {
+                                size : 'size5',
+                                chk : 'category',
+                                slt : [
+                                    '헤어', '메이크업', '네일아트', '피부', '뷰티크리에이터', '속눈썹연장&amp;펌', '왁싱',
+                                    '업스타일', '반영구화장', '스타일리스트', '맞춤형 화장품', '조제관리사', '기타'
+                                ]
+                            })
+                        </td>
+                    </tr>
+                }
+                @@if(context.sub0703){
+                    <tr>
+                        <th scope="row"><p class="label essen">관심분야</p></th>
+                        <td>
+                            @@include('./modules/slt-list.html', {
+                                size : 'size5',
+                                chk : 'category',
+                                slt : [
+                                    '취업', '창업', '자격증취득', '대학진학', '취미활동', '기타문의'
+                                ]
+                            })
+                        </td>
+                    </tr>
+                }
+                @@if(context.sub0704){
+                    <tr>
+                        <th scope="row"><p class="label essen">국비상담분야</p></th>
+                        <td>
+                            @@include('./modules/slt-list.html', {
+                                size : 'size5',
+                                chk : 'category',
+                                slt : [
+                                    '취업', '창업', '자격증취득', '기타문의',
+                                ]
+                            })
+                        </td>
+                    </tr>
+                }
+                @@if(context.sub0703 || context.sub0704){
+                    <tr>
+                        <th scope="row"><p class="label essen">답변형태</p></th>
+                        <td>
+                            @@include('./modules/slt-list.html', {
+                                size : 'size5',
+                                rdo : 'reply',
+                                slt : [
+                                    '이메일답변/전화연락', '이메일답변', '전화연락'
+                                ]
+                            })
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <th scope="row"><label for="ipt-name" class="essen">성명</label></th>
+                    <td>
+                        <input type="text" id="ipt-name" class="form-control">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th scope="row"><label for="ipt-email" class="essen">이메일</label></th>
+                    <td><input type="text" id="ipt-email" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="ipt-phone" class="essen">연락처</label></th>
+                    <td><input type="text" id="ipt-phone" class="form-control" placeholder="'-' 제외 11자리 숫자만 입력" maxlength="11"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><p class="label essen">희망 교육과정</p></th>
+                    <td>
+                        @@include('./modules/slt-list.html', {
+                            size : 'size5',
+                            rdo : 'curriculum',
+                            slt : [
+                                '메이크업', '네일아트', '스킨케어', '헤어디자인', '대학입시반', '스타일리스트',
+                                '스페셜과정', '단과과정'
+                            ]
+                        })
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><p class="label essen">교육 희망지점</p></th>
+                    <td>
+                        @@include('./modules/slt-list.html', {
+                            size : 'size5',
+                            rdo : 'spot',
+                            slt : [
+                                '강남지점', '영등포지점', '평택지점', '천안지점'
+                            ]
+                        })
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="ipt-title" class="essen">제목</label></th>
+                    <td><input type="text" id="ipt-title" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="ipt-cont" class="essen">상담내용</label></th>
+                    <td><textarea id="ipt-cont" class="form-control"></textarea></td>
+                </tr>
+            }
+            @@if(context.review){
+                <tr>
+                    <th scope="row">지점선택</th>
+                    <td>
+                        @@include('./modules/slt-list.html', {
+                            size : 'auto',
+                            rdo : 'spot',
+                            slt : [
+                                '강남점', '영등포점', '천안점', '평택점'
+                            ]
+                        })
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">수강생 이름</th>
+                    <td>
+                        <input type="text" class="form-control" aria-label="수강생 이름 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">내용</th>
+                    <td>
+                        <textarea class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">수강과목</th>
+                    <td>
+                        <div class="selectbox-wrap">
+                            <select class="nice-select" aria-label="수강과목 선택">
+                                <option value="">수강과목을 선택해 주세요</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">강사명</th>
+                    <td>
+                        <input type="text" class="form-control" aria-label="강사 이름 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">사진첨부</th>
+                    <td>
+                        <div class="inputfile-wrap">
+                            <input type="text" class="form-control" placeholder="파일선택" disabled>
+                            <label for="upload-file" class="btn btn-basic">업로드</label>
+                            <input type="file" id="upload-file">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">휴대폰번호</th>
+                    <td>
+                        <div class="d-flex-btn">
+                            <input type="text" class="form-control" aria-label="휴대폰번호 입력" placeholder="'-'제외 숫자 입력">
+                            <button type="button" class="btn btn-basic">인증번호</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">휴대폰번호</th>
+                    <td>
+                        <div class="d-flex-btn">
+                            <div class="num-input">
+                                <input type="text" class="form-control" aria-label="인증번호 입력">
+                                <span class="count">03:00</span>
+                            </div>
+                            <button type="button" class="btn btn-basic">인증완료</button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@@if(context.agree){
+<div class="agree-chk-box">
+    <p class="tit">개인정보수집동의</p>
+    <div class="agree-cont">
+        ■ 수집하는 개인정보 항목<br>
+        회사는 업무문의, 지원문의 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
+        ο 수집항목 : 이름 , 휴대전화번호 , 이메일 , 쿠키 , 접속 IP 정보<br>
+        ο 개인정보 수집방법 : 홈페이지(www.abc.kr), 서면양식 <br>
+        ■ 개인정보의 수집 및 이용목적<br>
+        회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+        ο 업무에 대한 문의, 지원문의 등 민원처리, 고지사항 전달 <br>
+        ■ 개인정보의 보유 및 이용기간<br>
+        원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br>
+        ο 보존 항목 : 이름 , 휴대전화번호 , 이메일 , 접속 로그 , 쿠키 , 접속 IP <br>
+        ο 정보보존 기간 : 1년
+    </div>
+    <span class="chk-wrap">
+        <input type="checkbox" id="agree">
+        <label for="agree">위 내용을 숙지하였으며 동의합니다.</label>
+    </span>
+</div>
+}

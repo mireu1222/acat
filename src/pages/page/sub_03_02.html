@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate03 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate03">
+            @@include('./layout/page-title.html', {
+                cate03 : true,
+                sub0302 : true,
+                title : '네일'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="certificate-info bg2">
+                        <div class="box">
+                            <h4 class="tit">네일 국가자격증 과정</h4>
+                            <p class="desc">한국산업인력 관리공단에서 시행하는 미용사(네일) 국가기술자격증 취득을 준비하는 과정으로 자격 검정 기준에 준하는 필기와 실기 과제에 대한 교육을 실시합니다.</p>
+                            <dl>
+                                <dt>취득자격증&amp;수료</dt>
+                                <dd>미용사(네일) 국가자격증</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <dl>
+                                <dt>주요내용</dt>
+                                <dd>네일아트 국가 자격증 과정으로 습식, 컬러링, 팁, 실크, 페디, 아크릴, 젤 등</dd>
+                            </dl>
+                            <dl>
+                                <dt>진출분야</dt>
+                                <dd>네일 코디네이터, 전문 뷰티살롱, 제품회사 에듀케이터, 교육강의, 프리랜서</dd>
+                            </dl>
+                            <dl>
+                                <dt>과정안내</dt>
+                                <dd>
+                                    <p><span>1개월</span>필기이론 및 실전 필기 모의고사 테스트와 O.T 및 기본 칼러링(4가지), 프렌치 딥프렌치, 그라데이션, 풀코트 교육</p>
+                                    <p><span>2개월</span>기본팁 붙이는 기법, 팁위드 랩과 아크릴 볼뜨기, 원톤스캅춰, 프렌치스캅춰 익히기</p>
+                                    <p><span>3개월</span>아크릴 프렌치스캅춰 완성도 올리기, 실크 익스텐션과 젤 마블 및 원톤 스캅춰 익히기, 네일 이론수업 및 실기 모의고사</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

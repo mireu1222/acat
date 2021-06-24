@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate02 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate02">
+            @@include('./layout/page-title.html', {
+                cate02 : true,
+                sub0207 : true,
+                title : '스페셜과정'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="study-visual sv07">
+                        <div class="tit-wrap">
+                            <p class="tit">SPECIAL</p>
+                            <p class="desc">메이크업에 대한 전체적인 이론적 지식과 테마에 따른<br>메이크업 실무 능력을 교육하고 자격증 취득을 위한 전반적인 교육을 실시합니다.</p>
+                        </div>
+                    </div>
+                    <div class="study-info-wrap">
+                        @@loop('./modules/study-loop.html', [
+                            {
+                                title : '뷰티크리에이터',
+                                desc : '페이스북 등의 SNS, 블로그 또는 유튜브와 같은 스트리밍서비스를 매체로 활용하여 뷰티 전문컨텐츠를 제작 및 방송 하는 전문 크리에이터를 양성하는 과정입니다.',
+                                dd : '뷰티크리에이터 Diploma',
+                                cont1 : '메이크업, 헤어스타일링, 제품교육, 촬영기법, 편집',
+                                cont2 : '유투버, 인플루언서, 연예인',
+                                cont3 : '미디어컨텐츠의 기획 및 제작, 방송 진행, 컴퓨터그래픽 등의 기술과 감각을 교육하는 과정'
+                            },
+                            {
+                                title : '강사양성과정',
+                                desc : '각 분야에 적합한 스타일을 전문적으로 교육하는 강사양성 과정입니다. 뷰티 전문 강사는 미용에 대한 전문적 지식을 바탕으로 마케팅과 고객서비스 교육을 실시합니다.',
+                                dd : '-',
+                                cont1 : '-',
+                                cont2 : '-',
+                                cont3 : '-'
+                            },
+                            {
+                                title : '대회 대비반(공모전)',
+                                desc : '-',
+                                dd : '-',
+                                cont1 : '-',
+                                cont2 : '-',
+                                cont3 : '-'
+                            },
+                            {
+                                title : '속눈썹 실무(펌, 연장)',
+                                desc : '특수모를 이용하여 한 가닥씩 연결하는 화장기법으로 속눈썹 연장을 통해 풍성하고 긴 속눈썹 연출로 자신의 속눈썹처럼 자연스럽게 표현할 수 있는 교육을 실시합니다.',
+                                dd : '-',
+                                cont1 : '속눈썹연장 제품 컨택법부터 상담기법, 눈모양에 따른 디자인잡는방법, 연장기법,등 속눈썹시술에 필요한 기술등을 실습위주의 수업',
+                                cont2 : '-',
+                                cont3 : {
+                                    ex : [
+                                        {
+                                            dt : '속눈썹2급',
+                                            dd : '전문적인 속눈썹 연출법 연장술과 중모술 및 속눈썹 연장 기법'
+                                        }, 
+                                        {
+                                            dt : '속눈썹1급',
+                                            dd : '아티스트 과정 교차 시술과 디자인 교차 및 모델 맞춤 디자인 시술 기법'
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                title : '스킨아트',
+                                desc : '반영구화장 창업반으로서 살롱에서 사용하는 기법을 위주로 수업을 진행합니다.',
+                                dd : '페이스 스킨아트 코디네이터 인증강사, 1급, 2급',
+                                cont1 : '반영구화장 창업반으로서 살롱에서 사용하는 기법을 위주로 수업을 진행합니다.',
+                                cont2 : '창업, 교육강사',
+                                cont3 : '기기를 이용해 얼굴에 대한 결점들을 보완하고 얼굴대칭에 맞는 디자인법, 엠보기법, 디지털 머신기법, 눈썹, 헤어라인, 입술, 아이라인 등 실기위주의 수업진행으로 전문 스킨아트 아티스트를 양성하는 과정'
+                            },
+                        ])
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

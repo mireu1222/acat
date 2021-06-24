@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate03 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate03">
+            @@include('./layout/page-title.html', {
+                cate03 : true,
+                sub0303 : true,
+                title : '피부'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="certificate-info bg3">
+                        <div class="box">
+                            <h4 class="tit">피부 국가자격증 과정</h4>
+                            <p class="desc">한국산업인력 관리공단에서 시행하는 미용사(피부) 국가기술자격증 취득을 준비하는 과정으로 자격 검정 기준에 준하는 필기와 실기 과제에 대한 교육을 실시합니다.</p>
+                            <dl>
+                                <dt>취득자격증&amp;수료</dt>
+                                <dd>미용사(피부) 국가자격증</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <dl>
+                                <dt>주요내용</dt>
+                                <dd>필기검정 이론, 클렌징 매뉴얼 테크닉, 팩/마스크/팔/다리 관리, 림프드레나지, 제모</dd>
+                            </dl>
+                            <dl>
+                                <dt>진출분야</dt>
+                                <dd>전문 뷰티살롱, 화장품 회사, 교육 강사, 성형외과, 피부과, 각종 병원, 웨딩샵, 프리랜서, 광고 기획사</dd>
+                            </dl>
+                            <dl>
+                                <dt>과정안내</dt>
+                                <dd>
+                                    <p><span>1개월</span>전문 뷰티살롱, 화장품 회사, 교육 강사, 성형외과, 피부과, 각종 병원, 웨딩샵, 프리랜서, 광고 기획사</p>
+                                    <p><span>2개월</span>매뉴얼테크닉 기법과 크림팩 및 석고, 고무 모델링 마스크 제1과제 전체테스트</p>
+                                    <p><span>3개월</span>팔, 다리 관리 및 제모, 림프드레나지와 제 1~3과제 총 실전 테스트</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

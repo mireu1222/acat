@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate06 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate06">
+            @@include('./layout/page-title.html', {
+                cate06 : true,
+                sub0603 : true,
+                title : '창업컨설팅'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    @@include('./modules/list-filter.html')
+                    @@include('./modules/notice-tbl.html', {
+                        notice : true,
+                        page : 'dev_04_03_view'
+                    })
+                    @@include('./modules/pagination.html')
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate02 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate02">
+            @@include('./layout/page-title.html', {
+                cate02 : true,
+                sub0205 : true,
+                title : '대학입시반'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="study-visual sv05">
+                        <div class="tit-wrap">
+                            <p class="tit">ENTRANCE EXAMINATION CLASS</p>
+                            <p class="desc">메이크업에 대한 전체적인 이론적 지식과 테마에 따른<br>메이크업 실무 능력을 교육하고 자격증 취득을 위한 전반적인 교육을 실시합니다.</p>
+                        </div>
+                    </div>
+                    <div class="study-info-wrap">
+                        @@loop('./modules/study-loop.html', [
+                            {
+                                title : '메이크업디자인 입시대비반',
+                                desc : '대학진학을 준비하는 고등학교 3학년 학생들의 메이크업디자인 전공을 위한 입시플랜 및 실기전형에 맞춘 전문과정으로 대학입시에 관련한 모든 교육을 실시합니다.',
+                                dd : '메이크업디자인 Diploma, 아트마스크 자격증',
+                                cont1 : '뷰티 메이크업, 아트마스크',
+                                cont2 : '서경대학교 및 미용관련 학과 진학',
+                                cont3 : '-'
+                            },
+                            {
+                                title : '헤어디자인 입시대비반',
+                                desc : '대학진학을 준비하는 고등학교 3학년 학생들의 헤어디자인 전공을 위한 입시플랜 및 실기전형에 맞춘 전문과정으로 대학입시에 관련한 모든 교육을 실시합니다.',
+                                dd : '헤어디자인 Diploma',
+                                cont1 : '커트, 펌',
+                                cont2 : '서경대학교 및 미용관련 학과 진학',
+                                cont3 : '-'
+                            },
+                            {
+                                title : '입시일러스트',
+                                desc : '-',
+                                dd : '-',
+                                cont1 : '-',
+                                cont2 : '성신여자대학교 및 미용관련 학과 진학',
+                                cont3 : '-'
+                            },
+                            {
+                                title : '포트폴리오',
+                                desc : '미용대학 입시를 준비하는 수험생 및 취업을 준비하는 예비 미용인을 위한 사진촬영 및 맵 작업, 포트폴리오를 제작하는 과정입니다.',
+                                dd : '포트폴리오과정 수료증',
+                                cont1 : '실습, 사진촬영, 이미지맵 작업, 포트폴리오 제작',
+                                cont2 : '정화예술대학교 및 미용관련 학과 진학, 방송국 에이전시 및 광고회사, 화장품 회사, 미용실, 뷰티샵, 교육 강사, 웨딩샵, 영화, 연예인 기획사, 연극, 뮤지컬, 오페라 기획사, 뷰티컨설턴트, 특수 분장사 등 취업',
+                                cont3 : '창의적이고 예술적인 작품을 표현하여 완성도 높은 작품집을 제작하는 교육과정'
+                            },
+                            {
+                                title : '입시 예비반(면접대비)',
+                                desc : '미용대학 입시를 희망하는 고등학교 3학년 미만 예비수험생을 위한 교육으로 한발 앞선 실기 및 면접 트레이닝을 위한 과정입니다.',
+                                dd : '미용사 국가기술자격증',
+                                cont1 : '학년에 맞는 입시플랜 설정, 국가기술자격증 취득, 대회수상, 면접 이미지 트레이닝',
+                                cont2 : '미용관련 대학교 및 관련학과 진학',
+                                cont3 : '-'
+                            },
+                        ])
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

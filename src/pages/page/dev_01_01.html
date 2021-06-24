@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate01 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate01">
+            @@include('./layout/page-title.html', {
+                cate01 : true,
+                sub0103 : true,
+                title : '강사소개'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="tc-lists">
+                        <ul class="lists">
+                            <li><div class="img"><img src="/images/img/img-pp01.jpg" alt=""></div></li>
+                            <li><div class="img"><img src="/images/img/img-pp02.jpg" alt=""></div></li>
+                            <li><div class="img"><img src="/images/img/img-pp03.jpg" alt=""></div></li>
+                            <li><div class="img"><img src="/images/img/img-pp01.jpg" alt=""></div></li>
+                            <li><div class="img"><img src="/images/img/img-pp02.jpg" alt=""></div></li>
+                            <li><div class="img"><img src="/images/img/img-pp03.jpg" alt=""></div></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

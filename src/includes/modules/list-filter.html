@@ -1,0 +1,12 @@
+<div class="list-filter">
+    <div class="search-wrap">
+        <span class="input-wrap">
+            <input type="text" class="form-control" placeholder="검색어를 입력하세요." title="검색어를 입력하세요.">
+        </span>
+        <button type="submit" class="btn-search"><span class="blind">검색</span></button>
+    </div>
+    @@if(context.write){
+        <a href="#review-write" class="btn btn-point btn-write" data-toggle="modal"><span>후기 등록</span></a>
+    }
+    <p class="total">Total <em class="text-point">99</em></p>
+</div>

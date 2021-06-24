@@ -1,0 +1,144 @@
+/* 자격증 */
+.container.cate03 {
+    .certificate-info {
+        margin-top:100px;
+        padding:170px 70px 0;
+        background-repeat:no-repeat;
+        background-position:center 0;
+        &:first-child {
+            margin-top:0;
+        }
+        &.bg1 {
+            background-image:url('/images/bg/bg-sub0301.jpg');
+        }
+        &.bg2 {
+            background-image:url('/images/bg/bg-sub0302.jpg');
+        }
+        &.bg3 {
+            background-image:url('/images/bg/bg-sub0303.jpg');
+        }
+        &.bg4 {
+            background-image:url('/images/bg/bg-sub0304-1.jpg');
+        }
+        &.bg5 {
+            background-image:url('/images/bg/bg-sub0304-2.jpg');
+        }
+        @include tablet {
+            padding:140px 40px 0;
+            background-size:auto 260px;
+        }
+        @include mobile {
+            padding:100px 12px 0;
+            background-size:auto 160px;
+        }
+        .box {
+            max-width:560px;
+            padding:40px 50px;
+            background:$white;
+            border-radius:10px;
+            box-shadow:$boxshadow;
+            @include tablet {
+                max-width:100%;
+            }
+            @include mobile {
+                padding:30px 20px;
+            }
+            .tit {
+                color:$point;
+                font-size:26px;
+                line-height:38px;
+                font-weight:900;
+                word-break:keep-all;
+                letter-spacing:-1px;
+                @include mobile {
+                    font-size:22px;
+                    line-height:30px;
+                }
+            }
+            .desc {
+                margin-top:10px;
+                padding-bottom:20px;
+                border-bottom:1px solid $border;
+                @include font;
+                word-break:keep-all;
+                @include mobile {
+                    margin-top:5px;
+                    padding-bottom:10px;
+                }
+            }
+            dl {
+                margin-top:20px;
+                @include font;
+                dt {
+                    font-weight:900;
+                }
+                @include mobile {
+                    margin-top:15px;
+                }
+            }
+        }
+        .cont {
+            margin-top:40px;
+            padding:40px 50px;
+            border-radius:10px;
+            background:$disabled;
+            @include mobile {
+                margin-top:15px;
+                padding:20px;
+            }
+            > dl {
+                margin-top:20px;
+                @include font;
+                @include clearfix;
+                word-break:keep-all;
+                @include mobile {
+                    margin-top:10px;
+                }
+                &:first-child {
+                    margin-top:0;
+                }
+                > dt {
+                    float:left;
+                    width:100px;
+                    font-weight:900;
+                    @include mobile {
+                        width:80px;
+                    }
+                }
+                > dd {
+                    margin-left:100px;
+                    color:$cont;
+                    @include mobile {
+                        margin-left:80px;
+                    }
+                }
+                dl.in {
+                    margin-top:10px;
+                    @include font;
+                    &:first-child {
+                        margin-top:0;
+                    }
+                    dt {
+                        margin-bottom:5px;
+                        color:$point;
+                        font-weight:900;
+                    }
+                }
+            }
+            p {
+                position:relative;
+                margin-top:5px;
+                padding-left:55px;
+                &:first-child {
+                    margin-top:0;
+                }
+                span {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    font-weight:700;
+                }
+            }
+        }
+    }
+}

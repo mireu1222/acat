@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate07 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate07">
+            @@include('./layout/page-title.html', {
+                cate07 : true,
+                sub0705 : true,
+                title : '자주찾는질문'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    @@include('./modules/accordion-list.html')
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(function(){
+            accordion();
+            dataSorting();
+        });
+    </script>
+</body>
+</html>

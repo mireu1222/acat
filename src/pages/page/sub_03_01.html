@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate03 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate03">
+            @@include('./layout/page-title.html', {
+                cate03 : true,
+                sub0301 : true,
+                title : '메이크업'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="certificate-info bg1">
+                        <div class="box">
+                            <h4 class="tit">메이크업 국가자격증 과정</h4>
+                            <p class="desc">한국산업인력 관리공단에서 시행하는 미용사(메이크업)국가기술 자격증 취득을 준비하는 과정으로 자격 검정 기준에 준하는 필기와 실기 과제에 대한 교육을 실시합니다.</p>
+                            <dl>
+                                <dt>취득자격증&amp;수료</dt>
+                                <dd>미용사(메이크업) 국가자격증</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <dl>
+                                <dt>주요내용</dt>
+                                <dd>필기검정 이론, 웨딩, 한복, 내츄럴, 시대별 메이크업, 캐릭터 분장, 속눈썹 익스테이션, 수염 등</dd>
+                            </dl>
+                            <dl>
+                                <dt>진출분야</dt>
+                                <dd>메이크업샵, 방송국 분장사, 웨딩 홀, 교육강사, 연예인 기획사(엔터테이먼트), 영화, 특수분장사, 뷰티컨설턴트, 프리랜서, 화장품(해외, 국내) 브랜드샵, 연극, 뮤지컬, 오페라 분장사</dd>
+                            </dl>
+                            <dl>
+                                <dt>과정안내</dt>
+                                <dd>
+                                    <p><span>1개월</span>필기이론 및 실전 필기 모의고사 테스트와 O.T 및 제품 설명, 다양한 패턴과 기본테크닉, 컬러 믹스, 내츄럴, 한복, 웨딩 메이크업</p>
+                                    <p><span>2개월</span>시대별 메이크업(1930-1980) 및 캐릭터 메이크업(레오파드)</p>
+                                    <p><span>3개월</span>무용 고전, 무용발레, 노역 메이크업 및 과제별 테스트</p>
+                                    <p><span>4개월</span>속눈썹 익스텐션 & 수염 및 실전 모의고사 테스트</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

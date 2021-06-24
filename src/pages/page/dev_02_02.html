@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate04 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate04">
+            @@include('./layout/page-title.html', {
+                cate04 : true,
+                sub0402 : true,
+                title : '이벤트'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="event-lists">
+                        <ul class="lists">
+                            <li>
+                                <a href="dev_02_02_view.html" class="inner">
+                                    <img src="/images/@thumb.gif" alt="이미지 설명">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dev_02_02_view.html" class="inner">
+                                    <img src="/images/@thumb.gif" alt="이미지 설명">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dev_02_02_view.html" class="inner">
+                                    <img src="/images/@thumb.gif" alt="이미지 설명">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dev_02_02_view.html" class="inner">
+                                    <img src="/images/@thumb.gif" alt="이미지 설명">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dev_02_02_view.html" class="inner">
+                                    <img src="/images/@thumb.gif" alt="이미지 설명">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dev_02_02_view.html" class="inner">
+                                    <img src="/images/@thumb.gif" alt="이미지 설명">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    @@include('./modules/pagination.html')
+                    <!-- 한 페이지당 list 6개씩(by design) --> 
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

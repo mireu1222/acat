@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate03 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate03">
+            @@include('./layout/page-title.html', {
+                cate03 : true,
+                sub0304 : true,
+                title : '헤어'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="certificate-info bg4">
+                        <div class="box">
+                            <h4 class="tit">헤어 국가자격증 과정</h4>
+                            <p class="desc">한국산업인력 관리공단에서 시행하는 미용사(일반) 국가 기술자격증 취득을 준비하는 과정으로 자격 검정 기준에 준하는 필기와 실기 과제에 대한 교육을 실시합니다.</p>
+                            <dl>
+                                <dt>취득자격증&amp;수료</dt>
+                                <dd>미용사(일반) 국가자격증</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <dl>
+                                <dt>주요내용</dt>
+                                <dd>필기검정 이론, 커트, 퍼머넌트, 두피스케일링 & 샴푸, 헤어 컬러링, 블로드라이& 롤 세팅</dd>
+                            </dl>
+                            <dl>
+                                <dt>진출분야</dt>
+                                <dd>	전문 뷰티살롱, 방송에이전시, 잡지, 광고회사, 웨딩샵, 교육 강사, 프리랜서, 해외취업</dd>
+                            </dl>
+                            <dl>
+                                <dt>과정안내</dt>
+                                <dd>
+                                    <p><span>1개월</span>필기이론 및 실전 필기 모의고사 테스트와 O.T 및 도구 사용 및 자세 익히며 원랭스 커트와 그래듀에이션 커트, 드라이교육(기법)</p>
+                                    <p><span>2개월</span>레이어커트 및 퍼머넌트 와인딩 기법 익히기 / 롤컬 기법</p>
+                                    <p><span>3개월</span>두피 스케일링 및 샴푸 기법, 헤어 컬러링 기법</p>
+                                    <p><span>4개월</span>롤컬 심화, 두피스케일링 및 샴푸심화, 헤어컬러링</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="certificate-info bg5">
+                        <div class="box">
+                            <h4 class="tit">이용사 국가자격증 과정</h4>
+                            <p class="desc">한국산업인력 관리공단에서 시행하는 이용사 국가기술자격증 취득을 준비하는 과정으로 자격 검정 기준에 준하는 필기와 실기과제에 대한 교육을 실시합니다.</p>
+                            <dl>
+                                <dt>취득자격증&amp;수료</dt>
+                                <dd>이용사 국가자격증</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <dl>
+                                <dt>주요내용</dt>
+                                <dd>필기 검정이론, 보통머리, 상고머리형, 둥근스포츠</dd>
+                            </dl>
+                            <dl>
+                                <dt>진출분야</dt>
+                                <dd>개인 이용업소나 호텔, 공공건물, 예식장의 이용실, TV 방송국, 스포츠센타, 개인 전속 이용사</dd>
+                            </dl>
+                            <dl>
+                                <dt>과정안내</dt>
+                                <dd>
+                                    <p><span>1개월</span>가위 자세 및 지간 잡기, 보통머리 및 면도, 탈색 및 샴푸, 트리트먼트, 멋내기 염색 및 샴푸</p>
+                                    <p><span>2개월</span>길게 지간잡기, 정발 및 아이론, 상고머리 및 면도, 소독과정</p>
+                                    <p><span>3개월</span>둥근 스포츠 및 면도, 전체커트, 새치 염색 및 아이론</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

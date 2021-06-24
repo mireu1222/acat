@@ -1,0 +1,194 @@
+/* 교육과정 */
+.container.cate02 {
+    .study-visual {
+        position:relative;
+        width:100%;
+        margin-bottom:80px;
+        @include calcs(padding-top, 340px, 1400px);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        @for $i from 1 through 7 {
+            &.sv0#{$i} {
+                background-image:url('/images/bg/bg-sub020#{$i}.jpg');
+            }
+        }
+        @include tablet {
+            height:250px;
+        }
+        @include mobile {
+            margin-bottom:30px;
+            padding-top:0;
+            height:200px;
+        }
+        .tit-wrap {
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            display:flex;
+            flex-direction:column;
+            width:70%;
+            max-width:700px;
+            padding:70px 80px;
+            background:rgba(#000, 0.4);
+            @include tablet {
+                width:80%;
+                max-width:none;
+                padding:40px 30px;
+            }
+            @include mobile {
+                width:100%;
+                padding:20px 12px;
+            }
+            .tit {
+                margin-top:auto;
+                color:$white;
+                font-size:48px;
+                font-weight:900;
+                @include tablet {
+                    font-size:36px;
+                }
+                @include mobile {
+                    font-size:30px;
+                }
+            }
+            .desc {
+                margin-top:20px;
+                color:rgba($white, 0.7);
+                @include font;
+                word-break:keep-all;
+                @include mobile {
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+    .study-info-wrap {
+        .card {
+            margin-top:100px;
+            @include clearfix;
+            @include tablet {
+                margin-top:80px;
+            }
+            @include mobile {
+                margin-top:60px;
+            }
+            &:first-child {
+                margin-top:0;
+            }
+            .left {
+                float:left;
+                @include calcs(width, 600px, 1400px);
+                @include calcs(padding-right, 40px, 1400px);
+                @include tablet {
+                    float:none;
+                    width:100%;
+                    padding-right:0;
+                }
+                .tit {
+                    color:$point;
+                    font-size:26px;
+                    line-height:38px;
+                    font-weight:900;
+                    word-break:keep-all;
+                    letter-spacing:-1px;
+                    @include mobile {
+                        font-size:22px;
+                        line-height:30px;
+                    }
+                }
+                .desc {
+                    margin-top:10px;
+                    padding-bottom:20px;
+                    border-bottom:1px solid $border;
+                    @include font;
+                    word-break:keep-all;
+                    @include mobile {
+                        margin-top:5px;
+                        padding-bottom:10px;
+                    }
+                }
+                dl {
+                    margin-top:20px;
+                    @include font;
+                    dt {
+                        font-weight:900;
+                    }
+                    @include mobile {
+                        margin-top:15px;
+                    }
+                }
+            }
+            .right {
+                float:right;
+                @include calcs(width, 800px, 1400px);
+                padding:40px 50px;
+                border-radius:10px;
+                background:$disabled;
+                @include tablet {
+                    float:none;
+                    width:100%;
+                    margin-top:20px;
+                }
+                @include mobile {
+                    margin-top:15px;
+                    padding:20px;
+                }
+                > dl {
+                    margin-top:20px;
+                    @include font;
+                    @include clearfix;
+                    word-break:keep-all;
+                    @include mobile {
+                        margin-top:10px;
+                    }
+                    &:first-child {
+                        margin-top:0;
+                    }
+                    > dt {
+                        float:left;
+                        width:100px;
+                        font-weight:900;
+                        @include mobile {
+                            width:80px;
+                        }
+                    }
+                    > dd {
+                        margin-left:100px;
+                        color:$cont;
+                        @include mobile {
+                            margin-left:80px;
+                        }
+                    }
+                    dl.in {
+                        margin-top:10px;
+                        @include font;
+                        &:first-child {
+                            margin-top:0;
+                        }
+                        dt {
+                            margin-bottom:5px;
+                            color:$point;
+                            font-weight:900;
+                        }
+                    }
+                }
+                p {
+                    position:relative;
+                    margin-top:5px;
+                    padding-left:55px;
+                    &:first-child {
+                        margin-top:0;
+                    }
+                    span {
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        font-weight:700;
+                    }
+                }
+            }
+        }
+    }
+}

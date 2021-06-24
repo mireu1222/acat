@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate02 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate02">
+            @@include('./layout/page-title.html', {
+                cate02 : true,
+                sub0206 : true,
+                title : '스타일리스트'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="study-visual sv06">
+                        <div class="tit-wrap">
+                            <p class="tit">STYLIST</p>
+                            <p class="desc">메이크업에 대한 전체적인 이론적 지식과 테마에 따른<br>메이크업 실무 능력을 교육하고 자격증 취득을 위한 전반적인 교육을 실시합니다.</p>
+                        </div>
+                    </div>
+                    <div class="study-info-wrap">
+                        @@loop('./modules/study-loop.html', [
+                            {
+                                title : '',
+                                desc : '',
+                                dd : '',
+                                cont1 : '',
+                                cont2 : '',
+                                cont3 : ''
+                            },
+                        ])
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

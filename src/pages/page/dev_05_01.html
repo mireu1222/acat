@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate07 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate07">
+            @@include('./layout/page-title.html', {
+                cate07 : true,
+                sub0701 : true,
+                title : '수강료 조회'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    @@include('./modules/input-table.html', {
+                        agree : true,
+                        sub0701 : true,
+                    })
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-border-basic"><span>취소</span></button>
+                        <button type="button" class="btn btn-lg btn-point"><span>문의하기</span></button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

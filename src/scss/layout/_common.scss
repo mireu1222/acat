@@ -1,0 +1,264 @@
+/* common layout */
+.skip-navigation {
+    position:absolute;
+    z-index:9999;
+    a {
+        display:block;
+        width:1px;
+        height:1px;
+        margin:-1px;
+        overflow:hidden;
+    }
+}
+
+@include pc {
+    body {
+        overflow:initial !important;
+    }
+}
+
+#wrap {
+    overflow:hidden;
+}
+
+/* container */
+.container {
+    position:relative;
+    padding-top:110px;
+    @include tablet {
+        padding-top:0;
+    }
+    @for $i from 1 through 7 {
+        &.cate0#{$i} {
+            .page-title {
+                background-image:url('/images/img/img-subvisual0#{$i}.jpg');
+            }
+        }
+    }
+    .page-title {
+        height:308px;
+        padding-top:158px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center bottom;
+        @include tablet {
+            height:250px;
+            padding-top:120px;
+        }
+        .title {
+            color:$white;
+            font-size:30px;
+            line-height:1;
+            font-weight:900;
+            text-align:center;
+        }
+        @include mobile {
+            height:160px;
+            padding-top:94px;    
+            background-size:auto 200px;
+            .title {
+                font-size:24px;
+            }
+        }
+    }
+    .sub-depth-wrap {
+        position:relative;
+        @include contArea;
+        margin-top:-30px;
+        @include mobile {
+            margin-top:0;
+            padding:0;
+            text-align:center;
+            overflow:hidden;
+            &::before {
+                content:' ';
+                position:absolute;
+                left:0;
+                right:0;
+                bottom:0;
+                height:1px;
+                background:$border;
+                z-index:-1;
+            }
+        }
+        .tabs {
+            display:flex;
+            @include exmob {
+                width:100% !important;
+                min-width:100%;
+            }
+            @include mobile {
+                position:relative;
+                display:inline-block;
+                white-space:nowrap;
+                font-size:0;
+                vertical-align:top;
+            }
+            li {
+                flex:1;
+                background:$border;
+                @include mobile {
+                    display:inline-block;
+                    vertical-align:top;
+                    background:none;
+                }
+                a {
+                    display:block;
+                    border-left:1px solid $white;
+                    background:transparent;
+                    color:$basic;
+                    text-align:center;
+                    font-size:16px;
+                    line-height:60px;
+                    font-weight:700;
+                    @include skew;
+                    transition:background 0.2s linear;
+                    @include pc {
+                        &:hover {
+                            background:rgba(#000, 0.15);
+                        }
+                    }
+                    @include mobile {
+                        height:45px;
+                        padding:0 15px;
+                        border-left:none;
+                        border-bottom:2px solid transparent;
+                        color:$gray;
+                        font-size:14px;
+                        line-height:45px;
+                    }
+                }
+                &:first-child a {
+                    border-left:none;
+                }
+                &.active a {
+                    background:$point;
+                    color:$white;
+                    @include mobile {
+                        background:none;
+                        border-color:$point;
+                        color:$point;
+                    }
+                }
+            }
+        }
+    }
+    .breadcrumb {
+        @include contArea;
+        margin-top:20px;
+        @include mobile {
+            margin-top:15px;
+        }
+        ol {
+            font-size:0;
+            text-align:right;
+            li {
+                display:inline-block;
+                vertical-align:top;
+                font-size:14px;
+                color:$cont;
+                @include skew;
+                @include mobile {
+                    font-size:12px;
+                }
+                &::before {
+                    content:'>';
+                    display:inline-block;
+                    vertical-align:top;
+                    margin:0 6px;
+                }
+                &:first-child::before {
+                    display:none;
+                }
+                &.now {
+                    color:$basic;
+                    font-weight:700;
+                }
+            }
+        }
+    }
+    .sub-page-title {
+        position:relative;
+        @include contArea;
+        margin-top:70px;
+        font-size:32px;
+        line-height:1;
+        font-weight:900;
+        text-align:left;
+        letter-spacing:-1px;
+        @include mobile {
+            margin-top:40px;
+            font-size:26px;
+        }
+    }
+    .contents {
+        padding-top:50px;
+        padding-bottom:90px;
+        @include mobile {
+            padding-top:30px;
+            padding-bottom:70px;
+        }
+        .sect {
+            @include contArea;
+            margin-top:100px;
+            @include tablet {
+                margin-top:80px;
+            }
+            @include mobile {
+                margin-top:60px;
+            }
+            &:first-child {
+                margin-top:0;
+            }
+        }
+    }
+    // nodata
+    .nodata {
+        padding:100px 0;
+        color:$gray;
+        @include font;
+        text-align:center;
+    }
+    // 개인정보수집동의
+    .agree-chk-box {
+        margin-top:40px;
+        @include mobile {
+            margin-top:20px;
+        }
+        .tit {
+            margin-bottom:10px;
+            @include font-lg;
+            font-weight:700;
+        }
+        .agree-cont {
+            max-height:200px;
+            padding:20px;
+            border:1px solid $border;
+            overflow-y:auto;
+            @include font-sm;
+            color:$cont;
+            @include mobile {
+                padding:12px;
+            }
+        }
+        .chk-wrap {
+            margin-top:10px;
+        }
+    }
+}
+
+/* dim */
+.common-dim {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:rgba(#000, 0.5);
+    z-index:1005;
+}
+
+.alert-txt {
+    text-align:center;
+    @include font;
+}

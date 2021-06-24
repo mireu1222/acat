@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html', {
+        main : true
+    })
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            main : true
+        })
+        <!-- // header -->
+
+        <div id="main" class="main">
+            <!-- visual -->
+            <div class="main-visual">
+                <!-- slider -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span class="bg pc" style="background-image:url('/images/img/img-visual01.jpg')"></span>
+                            <span class="bg mob" style="background-image:url('/images/img/img-visual01-m.jpg')"></span>
+                            <div class="text">
+                                <p class="pen">Asiacat Beauty Academy</p>
+                                <p class="tit">아시아캣뷰티 수강생<em>리얼후기</em></p>
+                                <p class="desc">수강생후기 &amp; 포토스토리 &amp; 포트폴리오 등 수강생들의 리얼후기</p>
+                                <a href="" class="btn btn-lg btn-point2">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="bg pc" style="background-image:url('/images/img/img-visual01.jpg')"></span>
+                            <span class="bg mob" style="background-image:url('/images/img/img-visual01-m.jpg')"></span>
+                            <div class="text">
+                                <p class="pen">Asiacat Beauty Academy</p>
+                                <p class="tit">아시아캣뷰티 수강생<em>리얼후기</em></p>
+                                <p class="desc">수강생후기 &amp; 포토스토리 &amp; 포트폴리오 등 수강생들의 리얼후기</p>
+                                <a href="" class="btn btn-lg btn-point2">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="bg pc" style="background-image:url('/images/img/img-visual01.jpg')"></span>
+                            <span class="bg mob" style="background-image:url('/images/img/img-visual01-m.jpg')"></span>
+                            <div class="text">
+                                <p class="pen">Asiacat Beauty Academy</p>
+                                <p class="tit">아시아캣뷰티 수강생<em>리얼후기</em></p>
+                                <p class="desc">수강생후기 &amp; 포토스토리 &amp; 포트폴리오 등 수강생들의 리얼후기</p>
+                                <a href="" class="btn btn-lg btn-point2">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- // slider -->
+                <!-- video -->
+                <div class="video-area" style="background:#000;">
+                    <div class="area">
+                        <iframe src="https://www.youtube.com/embed/D-DSgBL7HN4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- // video -->
+                <!-- quick menu -->
+                <div class="main-quick">
+                    <div class="flex-area">
+                        <div class="main-quick-form">
+                            <div class="form-title-wrap">
+                                <h2 class="form-title">수강료문의</h2>
+                            </div>
+                            <div class="main-forms">
+                                <form action="">
+                                    <ul class="lists">
+                                        <li>
+                                            <div class="slt-wrap">
+                                                <select class="nice-select" aria-label="지점 선택">
+                                                    <option value="">지점</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="slt-wrap">
+                                                <select class="nice-select" aria-label="과목 선택">
+                                                    <option value="">과목</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="text" class="form-control" placeholder="이름" aria-label="이름 입력">
+                                        </li>
+                                        <li>
+                                            <input type="text" class="form-control" placeholder="연락처" aria-label="연락처 입력">
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-black btn-submit"><span>문의하기</span></button>
+                                </form>
+                            </div>
+                            <p class="txt">주말 &middot; 공휴일 상담 및 접수 가능합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // quick menu -->
+            </div>
+            <!-- // visual -->
+
+            <!-- info -->
+            <section class="sect00">
+                <div class="area">
+                    <div class="call">
+                        <p class="num">1661-9301</p>
+                        <p class="desc">주말 &middot; 공휴일 상담 및 접수 가능합니다.</p>
+                    </div>
+                    <ul class="link-list">
+                        <li><a href="/page/dev_05_01.html" class="icon01">수강료조회</a></li>
+                        <li><a href="/page/dev_05_03.html" class="icon02">상담신청</a></li>
+                        <li><a href="" class="icon03">카톡플친</a></li>
+                        <li><a href="/page/sub_01_07.html" class="icon04">위치조회</a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <button type="button" class="btn-toggle"><span>지점안내</span></button>
+                        <ul class="lists">
+                            <li><a href="" target="_blank">영등포지점</a></li>
+                            <li><a href="" target="_blank">평택지점</a></li>
+                            <li><a href="" target="_blank">천안지점</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- // info -->
+
+            <!-- section01 -->
+            <section class="main-sect sect01 pb-0">
+                <div class="sect-title">
+                    <p class="eyebrow">BEST INTERVIEW</p>
+                    <h2 class="title">아시아캣 수강생의<br>생생한 인터뷰를 확인해보세요</h2>
+                    <a href="/page/dev_02_04.html" class="view-more">VIEW MORE</a>
+                </div>
+                <div class="review-wrap">
+                    <div class="area">
+                        <ul class="thumb-list">
+                            <li>
+                                <div class="inner">
+                                    <span class="thumb">
+                                        <img src="/images/img/img-review01.jpg" alt="">
+                                    </span>
+                                    <span class="fg">MAKE UP CLASS</span>
+                                    <p class="tit">
+                                        박혜린 수강생 인터뷰
+                                    </p>
+                                    <p class="desc">짧은 기간 동안 메이크업을 배웠지만 아시아캣 뷰티 아카데미에서 제가 원하는 목표를 이룬게 강사님들께 너무 감사해서 수강후기를 남겨봅니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <span class="thumb">
+                                        <img src="/images/img/img-review02.jpg" alt="">
+                                    </span>
+                                    <span class="fg">MAKE UP CLASS</span>
+                                    <p class="tit">
+                                        이지희 수강생 인터뷰
+                                    </p>
+                                    <p class="desc">두 아이의 엄마로, 경력단절 주부이던 제가 이제는 메이크업 아티스트로 제2의 커리어를 시작합니다.<br>워킹맘 파이팅! 강사님들 감사합니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="review-slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <ul class="text-list">
+                                            <li>
+                                                <span class="fg">MAKE UP CLASS</span>
+                                                <p class="tit">
+                                                    메이크업 수업 너무 재밌게 신기하게 봤어여
+                                                </p>
+                                                <p class="desc">두 아이의 엄마로, 경력단절 주부이던 제가 이제는 메이크업 아티스트로 제2의 커리어를 시작합니다. 워킹맘 파이팅! 강사님들 감사합니다. 두 아이의 엄마로, 경력단절 주부이던 제가 이제는 메이크업</p>
+                                                <p class="date"><span class="blind">작성일</span>2020.12.15</p>
+                                            </li>
+                                            <li>
+                                                <span class="fg">MAKE UP CLASS</span>
+                                                <p class="tit">
+                                                    메이크업 수업 너무 재밌게 신기하게 봤어여
+                                                </p>
+                                                <p class="desc">두 아이의 엄마로, 경력단절 주부이던 제가 이제는 메이크업 아티스트로 제2의 커리어를 시작합니다. 워킹맘 파이팅! 강사님들 감사합니다. 두 아이의 엄마로, 경력단절 주부이던 제가 이제는 메이크업</p>
+                                                <p class="date"><span class="blind">작성일</span>2020.12.15</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="controller">
+                                    <div class="control-btn prev" aria-label="이전"></div>
+                                    <div class="control-btn next" aria-label="다음"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // section01 -->
+
+            <!-- section02 -->
+            <section class="main-sect sect02">
+                <div class="area">
+                    <div class="sect-title">
+                        <p class="eyebrow">ASIACAT CURRICULUM</p>
+                        <h2 class="title fw-bold"><small>괜찮은 나를 만나다</small>커리큘럼 안내</h2>
+                        <a href="/page/sub_02_01.html" class="view-more">VIEW MORE</a>
+                    </div>
+                    <div class="cc-lists">
+                        <ul class="lists">
+                            <li>
+                                <a href="/page/sub_02_04.html" class="inner">
+                                    <span class="thumb" aria-hidden="true"><img src="/images/img/img-cate01.jpg" alt=""></span>
+                                    <span class="e-txt">01 - HAIR DESIGN</span>
+                                    <p class="k-txt">헤어디자인</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/page/sub_02_01.html" class="inner">
+                                    <span class="thumb" aria-hidden="true"><img src="/images/img/img-cate02.jpg" alt=""></span>
+                                    <span class="e-txt">02 - MAKE UP</span>
+                                    <p class="k-txt">메이크업</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/page/sub_02_02.html" class="inner">
+                                    <span class="thumb" aria-hidden="true"><img src="/images/img/img-cate03.jpg" alt=""></span>
+                                    <span class="e-txt">03 - NAIL ART</span>
+                                    <p class="k-txt">네일아트</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/page/sub_02_03.html" class="inner">
+                                    <span class="thumb" aria-hidden="true"><img src="/images/img/img-cate04.jpg" alt=""></span>
+                                    <span class="e-txt">04 - SKIN CARE</span>
+                                    <p class="k-txt">피부미용</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/page/sub_02_06.html" class="inner">
+                                    <span class="thumb" aria-hidden="true"><img src="/images/img/img-cate05.jpg" alt=""></span>
+                                    <span class="e-txt">05 - STYLIST</span>
+                                    <p class="k-txt">스타일리스트</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/page/sub_02_07.html" class="inner">
+                                    <span class="thumb" aria-hidden="true"><img src="/images/img/img-cate06.jpg" alt=""></span>
+                                    <span class="e-txt">06 - SPECIAL COURSE</span>
+                                    <p class="k-txt">스페셜과정</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- // section02 -->
+
+            <!-- section03 -->
+            <section class="main-sect sect03">
+                <div class="sect-title">
+                    <p class="eyebrow">INSTRUCTOR INTRODUCTION</p>
+                    <h2 class="title">아시아캣 뷰티 아카데미<br>강사소개</h2>
+                    <a href="/page/dev_01_01.html" class="view-more">VIEW MORE</a>
+                </div>
+                <div class="ist-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="img">
+                                    <img src="/images/img/img-pp01.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="img">
+                                    <img src="/images/img/img-pp02.jpg" alt="">
+                                </span>
+                            </div><div class="swiper-slide">
+                                <span class="img">
+                                    <img src="/images/img/img-pp03.jpg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controller main">
+                        <div class="control-btn prev" aria-label="이전"></div>
+                        <div class="control-btn next" aria-label="다음"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- // section03 -->
+
+            <!-- section04 -->
+            <section class="main-sect sect04">
+                <div class="spot-slider">
+                    <div class="slide-area">
+                        <div class="sect-title">
+                            <p class="eyebrow">SPOT INTRODUCTION</p>
+                            <h2 class="title">아시아캣 뷰티 아카데미 지점</h2>
+                            <a href="" class="view-more">VIEW MORE</a>
+                        </div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span class="icon c01" aria-hidden="true"></span>
+                                    <dl>
+                                        <dt>강남지점</dt>
+                                        <dd>아시아캣 뷰티 아카데미에서는 최적의 교육환경을 우선으로 하여, 수강생 및 예비창업자를 위한 교육장소를 제공하고 있습니다.</dd>
+                                        <dd>
+                                            <p><em>ADD</em>서울특별시 강남구 학동로46길 23 AMF GLOBAL 3F</p>
+                                            <p><em>TEL</em>02-1111-1111</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="icon c02" aria-hidden="true"></span>
+                                    <dl>
+                                        <dt>영등포지점</dt>
+                                        <dd>아시아캣 뷰티 아카데미에서는 최적의 교육환경을 우선으로 하여, 수강생 및 예비창업자를 위한 교육장소를 제공하고 있습니다.</dd>
+                                        <dd>
+                                            <p><em>ADD</em>서울특별시 강남구 학동로46길 23 AMF GLOBAL 3F</p>
+                                            <p><em>TEL</em>02-1111-1111</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="icon c03" aria-hidden="true"></span>
+                                    <dl>
+                                        <dt>평택지점</dt>
+                                        <dd>아시아캣 뷰티 아카데미에서는 최적의 교육환경을 우선으로 하여, 수강생 및 예비창업자를 위한 교육장소를 제공하고 있습니다.</dd>
+                                        <dd>
+                                            <p><em>ADD</em>서울특별시 강남구 학동로46길 23 AMF GLOBAL 3F</p>
+                                            <p><em>TEL</em>02-1111-1111</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controller main">
+                        <div class="control-btn prev" aria-label="이전"></div>
+                        <div class="control-btn next" aria-label="다음"></div>
+                    </div>
+                </div>
+                <div class="video-area">
+                    <div class="area">
+                        <iframe src="https://www.youtube.com/embed/D-DSgBL7HN4?playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- // section04 -->
+
+            <!-- section05 -->
+            <section class="main-sect sect05">
+                <ul class="social-lists">
+                    <li>
+                        <div class="inner">
+                            <span class="thumb" style="background-image:url('/images/img/img-cate06.jpg')" aria-hidden="true"></span>
+                            <div class="cont">
+                                <p class="sns fb">FACEBOOK</p>
+                                <p class="desc">제대로 가르치는 교육! 20년 운영경력! 국내외 정상수준의 스타급 강사진  개인 맞춤형 교육시스템으로 비교불가의 강사진을 경험</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <span class="thumb" style="background-image:url('/images/img/img-cate06.jpg')" aria-hidden="true"></span>
+                            <div class="cont">
+                                <p class="sns ks">KAKAOSTORY</p>
+                                <p class="desc">제대로 가르치는 교육! 20년 운영경력! 국내외 정상수준의 스타급 강사진  개인 맞춤형 교육시스템으로 비교불가의 강사진을 경험</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <span class="thumb" style="background-image:url('/images/img/img-cate06.jpg')" aria-hidden="true"></span>
+                            <div class="cont">
+                                <p class="sns is">INSTAGRAM</p>
+                                <p class="desc">제대로 가르치는 교육! 20년 운영경력! 국내외 정상수준의 스타급 강사진  개인 맞춤형 교육시스템으로 비교불가의 강사진을 경험</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- // section05 -->
+
+            <!-- section06 -->
+            <section class="main-sect sect06">
+                <div class="sect-title">
+                    <p class="eyebrow">LECTURE SITE</p>
+                    <h2 class="title">아시아캣 뷰티 아카데미<br>강의현장</h2>
+                    <a href="/page/sub_01_04.html" class="view-more">VIEW MORE</a>
+                </div>
+                <div class="area site-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/images/img/img-shop01.jpg" alt="">
+                                <span class="info">
+                                    <p><em>본사</em>아시아캣 뷰티 아카데미 본사</p>
+                                </span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/images/img/img-shop02.jpg" alt="">
+                                <span class="info">
+                                    <p><em>본사</em>인포메이션</p>
+                                </span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/images/img/img-shop03.jpg" alt="">
+                                <span class="info">
+                                    <p><em>본사</em>헤어 강의실</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controller main">
+                        <div class="control-btn prev" aria-label="이전"></div>
+                        <div class="control-btn next" aria-label="다음"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- // section06 -->
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+
+        <!-- floating -->
+        <div class="floating-menu">
+            <div class="floating-quick-forms">
+                <h2 class="tit">수강료조회</h2>
+                <div class="main-forms">
+                    <form action="">
+                        <ul class="lists">
+                            <li>
+                                <div class="slt-wrap">
+                                    <select class="nice-select" aria-label="지점 선택">
+                                        <option value="">지점</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slt-wrap">
+                                    <select class="nice-select" aria-label="과목 선택">
+                                        <option value="">과목</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="text" class="form-control" placeholder="이름" aria-label="이름 입력">
+                            </li>
+                            <li>
+                                <input type="text" class="form-control" placeholder="연락처" aria-label="연락처 입력">
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-point2"><span>문의하기</span></button>
+                    </form>
+                </div>
+            </div>
+            <a href="#wrap" class="totop"><span class="blind">상단으로</span></a>
+            <div class="call">
+                <h3 class="tit">상담&amp;접수</h3>
+                <p>1661-9301</p>
+            </div>
+        </div>
+        <!-- // floating -->
+    </div>
+    <script>
+        $(function(){
+            var oh = $(window).outerHeight(true);
+            $('.main-visual').css('height', oh);
+
+            $(window).resize(function(){
+                var oh = $(this).outerHeight(true);
+                $('.main-visual').css('height', oh);
+            });
+        });
+
+        const visualSlider = new Swiper('.main-visual .swiper-container', {
+            autoplay: {
+                delay : 4000,
+            },
+            loop : true,
+            pagination: {
+                el : '.swiper-pagination',
+                type: 'bullets'
+            }
+        });
+
+        const reviewSlider = new Swiper('.review-slider .swiper-container', {
+            loop : true,
+            navigation: {
+                prevEl : '.review-slider .control-btn.prev',
+                nextEl : '.review-slider .control-btn.next',
+            }
+        });
+
+        const istSlider = new Swiper('.ist-slider .swiper-container', {
+            loop : true,
+            slidesPerView : 1,
+            spaceBetween : 10,
+            navigation: {
+                prevEl : '.ist-slider .control-btn.prev',
+                nextEl : '.ist-slider .control-btn.next',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView : 2,
+                    spaceBetween : 20
+                },
+                1024: {
+                    slidesPerView : 3,
+                    spaceBetween : 22
+                }
+            }
+        });
+
+        const spotSlider = new Swiper('.spot-slider .swiper-container', {
+            loop : true,
+            slidesPerView : 1,
+            spaceBetween : 10,
+            navigation: {
+                prevEl : '.spot-slider .control-btn.prev',
+                nextEl : '.spot-slider .control-btn.next',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView : 2,
+                    spaceBetween : 20
+                },
+                1024: {
+                    slidesPerView : 3,
+                    spaceBetween : 40
+                }
+            }
+        });
+
+        const siteSlider = new Swiper('.site-slider .swiper-container', {
+            loop : true,
+            slidesPerView : 1,
+            spaceBetween : 10,
+            navigation: {
+                prevEl : '.site-slider .control-btn.prev',
+                nextEl : '.site-slider .control-btn.next',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView : 2,
+                    spaceBetween : 20
+                },
+                1024: {
+                    slidesPerView : 3,
+                    spaceBetween : 30
+                }
+            }
+        });
+
+        floatingDip();
+    </script>
+</body>
+</html>

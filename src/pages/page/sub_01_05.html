@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate01 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate01">
+            @@include('./layout/page-title.html', {
+                cate01 : true,
+                sub0105 : true,
+                title : '제휴 및 협력사'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="cate-tabs">
+                        <ul class="tabs" data-evt="tab">
+                            <li><a href="tab01">제휴사</a></li>
+                            <li><a href="tab02">교육기관</a></li>
+                            <li><a href="tab03">협회</a></li>
+                            <li><a href="tab04">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="ci-lists" data-id="tab01">
+                        <ul class="lists">
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>제휴사명</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ci-lists" data-id="tab02">
+                        <ul class="lists">
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>교육기관명</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>교육기관명</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ci-lists" data-id="tab03">
+                        <ul class="lists">
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>협회명</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>협회명</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>협회명</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ci-lists" data-id="tab04">
+                        <ul class="lists">
+                            <li>
+                                <div class="inner">
+                                    <span class="cis">
+                                        <img src="/images/logo-on.png" alt="">
+                                    </span>
+                                    <p>기타명</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        uiTab();
+    </script>
+</body>
+</html>

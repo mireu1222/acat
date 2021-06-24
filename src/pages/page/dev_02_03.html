@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate04 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate04">
+            @@include('./layout/page-title.html', {
+                cate04 : true,
+                sub0403 : true,
+                title : '뉴스/언론'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="masonry-list-wrap">
+                        <div class="item-wrap">
+                            @@loop('./modules/masonry-list.html', [
+                                {
+                                    thumbType : true,
+                                    link : '/page/dev_02_03_view.html',
+                                },
+                                {
+                                    link : '/page/dev_02_03_view.html',
+                                },
+                                {
+                                    videoType : true,
+                                    link : '/page/dev_02_03_view.html',
+                                    video : 'https://www.youtube.com/embed/JT8Z55ZQ84k',
+                                },
+                                {
+                                    thumbType : true,
+                                    link : '/page/dev_02_03_view.html',
+                                },
+                                {
+                                    link : '/page/dev_02_03_view.html',
+                                },
+                                {
+                                    videoType : true,
+                                    link : '/page/dev_02_03_view.html',
+                                    video : 'https://www.youtube.com/embed/JT8Z55ZQ84k',
+                                },
+                                {
+                                    thumbType : true,
+                                    link : '/page/dev_02_03_view.html',
+                                },
+                                {
+                                    link : '/page/dev_02_03_view.html',
+                                },
+                                {
+                                    videoType : true,
+                                    link : '/page/dev_02_03_view.html',
+                                    video : 'https://www.youtube.com/embed/JT8Z55ZQ84k',
+                                }
+                            ])
+                        </div>
+                    </div>
+                    @@include('./modules/pagination.html')
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(function() {
+            $('.masonry-list-wrap .item-wrap').masonry({
+                itemSelector: '.items',
+                percentPosition: true,
+                horizontalOrder: true
+            });
+            $('[data-control="modal"]').videoModal();
+        });
+        
+    </script>
+</body>
+</html>

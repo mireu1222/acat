@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate04 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate04">
+            @@include('./layout/page-title.html', {
+                cate04 : true,
+                sub0405 : true,
+                title : '수강후기'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    @@include('./modules/list-filter.html', {
+                        write : true
+                    })
+                    <div class="review-lists">
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-review01.jpg');"></span>
+                                <div class="conts">
+                                    <div class="top">
+                                        <span class="flag spot01">영등포점</span>
+                                        <p class="by"><span class="blind">작성자</span>조은혜</p>
+                                        <ul class="info">
+                                            <li>수강과목 : 네일아트국가자격증반</li>
+                                            <li>강사 : 김강사</li>
+                                        </ul>
+                                    </div>
+                                    <p class="desc">아시아캣 뷰티아카데미 대구지점 메이크업 민간 1급 자격증반 사임당 강사님께 수업을 받고 있는 김지우입니다.메이크업 국가자격증을 취득하고 메이크업에 관심이 더 많아져서 1급도 듣게 되었고 처음이라 많이 어렵고 실수도 많이 했지만사임당 강사님께서 친절히 설명해 주시고 잘못된 부분은 바로바로 피드백 해주셔서 이해가 잘 된 거 같아용</p>
+                                    <p class="date"><span class="blind">작성일</span>2021.05.15</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/@noimg.jpg');"></span><!-- 등록된 이미지 없을 때 case -->
+                                <div class="conts">
+                                    <div class="top">
+                                        <span class="flag spot02">천안점</span>
+                                        <p class="by"><span class="blind">작성자</span>조은혜</p>
+                                        <ul class="info">
+                                            <li>수강과목 : 네일아트국가자격증반</li>
+                                            <li>강사 : 김강사</li>
+                                        </ul>
+                                    </div>
+                                    <p class="desc">아시아캣 뷰티아카데미 대구지점 메이크업 민간 1급 자격증반 사임당 강사님께 수업을 받고 있는 김지우입니다.메이크업 국가자격증을 취득하고 메이크업에 관심이 더 많아져서 1급도 듣게 되었고 처음이라 많이 어렵고 실수도 많이 했지만사임당 강사님께서 친절히 설명해 주시고 잘못된 부분은 바로바로 피드백 해주셔서 이해가 잘 된 거 같아용</p>
+                                    <p class="date"><span class="blind">작성일</span>2021.05.15</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/@noimg.jpg');"></span><!-- 등록된 이미지 없을 때 case -->
+                                <div class="conts">
+                                    <div class="top">
+                                        <span class="flag spot03">평택점</span>
+                                        <p class="by"><span class="blind">작성자</span>조은혜</p>
+                                        <ul class="info">
+                                            <li>수강과목 : 네일아트국가자격증반</li>
+                                            <li>강사 : 김강사</li>
+                                        </ul>
+                                    </div>
+                                    <p class="desc">아시아캣 뷰티아카데미 대구지점 메이크업 민간 1급 자격증반 사임당 강사님께 수업을 받고 있는 김지우입니다.메이크업 국가자격증을 취득하고 메이크업에 관심이 더 많아져서 1급도 듣게 되었고 처음이라 많이 어렵고 실수도 많이 했지만사임당 강사님께서 친절히 설명해 주시고 잘못된 부분은 바로바로 피드백 해주셔서 이해가 잘 된 거 같아용</p>
+                                    <p class="date"><span class="blind">작성일</span>2021.05.15</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-review01.jpg');"></span>
+                                <div class="conts">
+                                    <div class="top">
+                                        <span class="flag spot04">강남점</span>
+                                        <p class="by"><span class="blind">작성자</span>조은혜</p>
+                                        <ul class="info">
+                                            <li>수강과목 : 네일아트국가자격증반</li>
+                                            <li>강사 : 김강사</li>
+                                        </ul>
+                                    </div>
+                                    <p class="desc">아시아캣 뷰티아카데미 대구지점 메이크업 민간 1급 자격증반 사임당 강사님께 수업을 받고 있는 김지우입니다.메이크업 국가자격증을 취득하고 메이크업에 관심이 더 많아져서 1급도 듣게 되었고 처음이라 많이 어렵고 실수도 많이 했지만사임당 강사님께서 친절히 설명해 주시고 잘못된 부분은 바로바로 피드백 해주셔서 이해가 잘 된 거 같아용</p>
+                                    <p class="date"><span class="blind">작성일</span>2021.05.15</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-review01.jpg');"></span>
+                                <div class="conts">
+                                    <div class="top">
+                                        <span class="flag spot01">영등포점</span>
+                                        <p class="by"><span class="blind">작성자</span>조은혜</p>
+                                        <ul class="info">
+                                            <li>수강과목 : 네일아트국가자격증반</li>
+                                            <li>강사 : 김강사</li>
+                                        </ul>
+                                    </div>
+                                    <p class="desc">아시아캣 뷰티아카데미 대구지점 메이크업 민간 1급 자격증반 사임당 강사님께 수업을 받고 있는 김지우입니다.메이크업 국가자격증을 취득하고 메이크업에 관심이 더 많아져서 1급도 듣게 되었고 처음이라 많이 어렵고 실수도 많이 했지만사임당 강사님께서 친절히 설명해 주시고 잘못된 부분은 바로바로 피드백 해주셔서 이해가 잘 된 거 같아용</p>
+                                    <p class="date"><span class="blind">작성일</span>2021.05.15</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/@noimg.jpg');"></span><!-- 등록된 이미지 없을 때 case -->
+                                <div class="conts">
+                                    <div class="top">
+                                        <span class="flag spot02">천안점</span>
+                                        <p class="by"><span class="blind">작성자</span>조은혜</p>
+                                        <ul class="info">
+                                            <li>수강과목 : 네일아트국가자격증반</li>
+                                            <li>강사 : 김강사</li>
+                                        </ul>
+                                    </div>
+                                    <p class="desc">아시아캣 뷰티아카데미 대구지점 메이크업 민간 1급 자격증반 사임당 강사님께 수업을 받고 있는 김지우입니다.메이크업 국가자격증을 취득하고 메이크업에 관심이 더 많아져서 1급도 듣게 되었고 처음이라 많이 어렵고 실수도 많이 했지만사임당 강사님께서 친절히 설명해 주시고 잘못된 부분은 바로바로 피드백 해주셔서 이해가 잘 된 거 같아용</p>
+                                    <p class="date"><span class="blind">작성일</span>2021.05.15</p>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    @@include('./modules/pagination.html')
+                    <!-- 한 페이지당 list 6개씩(by design) --> 
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <!-- modal -->
+    @@include('./modules/modal.html', {
+        id : 'review-write'
+    })
+    <!-- // modal -->
+</body>
+</html>

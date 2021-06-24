@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate01 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate01">
+            @@include('./layout/page-title.html', {
+                cate01 : true,
+                sub0102 : true,
+                title : '히스토리'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="history">
+                        <div class="title">
+                            <p>2021<em>아시아캣 뷰티아카데미 브랜드 런칭</em></p>
+                        </div>
+                        <!-- 2021 -->
+                        <div class="box">
+                            <p class="year">2021</p>
+                            <div class="cont">
+                                <ul class="lists">
+                                    <li>
+                                        <h5 class="month">02<span class="blind">월</span></h5>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>주식회사 에이엠에프글로벌 논현동 신사옥 이전</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="month">03<span class="blind">월</span></h5>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>주식회사 에이엠에프글로벌 아시아캣 뷰티아카데미 프랜차이즈 사업부 설립</li>
+                                                <li>아시아캣 뷰티아카데미 브랜드 런칭</li>
+                                            </ul>
+                                            <div class="imgs">
+                                                <span><img src="/images/img/img-sub0102-1.jpg" alt=""></span>
+                                                <span><img src="/images/img/img-sub0102-2.jpg" alt=""></span>
+                                                <span><img src="/images/img/img-sub0102-3.jpg" alt=""></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="month">04<span class="blind">월</span></h5>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>한국모델협회 공식지정 업체 선정</li>
+                                                <li>아시아모델페스티벌조직위원회 공식지정 업체 선정</li>
+                                                <li>코탑미디어 공식지정 업체 선정</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="month">05<span class="blind">월</span></h5>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>영화 "팔로워" 미술분장팀 단독참여</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="month">06<span class="blind">월</span></h5>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>드라마 "쇼윈도" 미술분장팀 단독참여</li>
+                                                <li>K-Model Awards 메이크업, 헤어 단독참여</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- // 2021 -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

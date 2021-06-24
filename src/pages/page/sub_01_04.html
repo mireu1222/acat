@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate01 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate01">
+            @@include('./layout/page-title.html', {
+                cate01 : true,
+                sub0104 : true,
+                title : '교육시설안내'
+            })
+
+            <div class="contents">
+                <section class="sect">
+                    <div class="facilitys">
+                        <div class="video-box">
+                            <a href="#video" data-toggle="videoModal">
+                                <div class="text">
+                                    <p class="tit">PR VIDEO</p>
+                                    <p class="desc">머리에서 발끝까지 아름다움을 추구하는 아시아캣뷰티 아카데미</p>
+                                </div>
+                            </a>
+                            <div class="info" aria-hidden="true">
+                                <p class="tit">아시아캣 뷰티 아카데미 내부시설</p>
+                                <p class="desc">아시아캣 뷰티 아카데미 내부시설</p>
+                                <p class="src">https://www.youtube.com/embed/0sXK7FoG3yc</p>
+                            </div>
+                        </div>
+                        <div class="slider-wrap">
+                            <h4 class="tit">아시아캣뷰티 시설안내</h4>
+                            <p class="desc">아시아캣 트레이드 마크라고 할 수 있는 토탈샵에서 메이크업, 헤어, 네일아트 등의 실무 환경 체험을 편안하고 자유롭게 학습 하실 수 있습니다.<br>이제 아시아캣뷰티 수강생이라면 누구나 토탈샵에서 마음껏, 자신의 스킬을 다듬고 높일 수 있습니다.</p>
+                            <div class="photo-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/img/img-sub0104-slide1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-prev" aria-hidden="이전"></div>
+                                <div class="swiper-next" aria-hidden="다음"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(function(){
+            const thumb = new Swiper('.thumb-slider .swiper-container', {
+                loop: false,
+                slidesPerView : 3,
+                spaceBetween: 5,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                freeMode : true,
+                navigation: {
+                    prevEl : '.thumb-slider .swiper-prev',
+                    nextEl : '.thumb-slider .swiper-next',
+                },
+                breakpoints: {
+                    1024 : {
+                        slidesPerView : 6,
+                        spaceBetween: 10,
+                    },
+                    768 : {
+                        slidesPerView : 4,
+                        spaceBetween: 10,
+                    }
+                }
+            });
+
+            const gallery = new Swiper('.photo-slider .swiper-container', {
+                loop:true,
+                spaceBetween: 10,
+                thumbs: {
+                    swiper : thumb
+                }
+            });
+
+            $('[data-toggle="videoModal"]').videoModal();
+        });
+    </script>
+</body>
+</html>

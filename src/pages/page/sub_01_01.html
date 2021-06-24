@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            cate01 : true,
+        })
+        <!-- // header -->
+
+        <!-- contents -->
+        <div class="container cate01">
+            @@include('./layout/page-title.html', {
+                cate01 : true,
+                sub0101 : true,
+                title : '아카데미 소개'
+            })
+
+            <div class="contents">
+                <div class="introduce">
+                    <section class="sect hello">
+                        <h4 class="tit">"아시아캣 뷰티아카데미는<br>아티스트들의 꿈과 비젼입니다."</h4>
+                        <p class="desc">아시아캣 뷰티는 뷰티스트의 꿈과 비젼을 제시하고 뷰티, 엔터, 모델, 인플루언서 등 뷰티와 미디어 전체를 아우를 수 있는 뷰티스트를 꿈꾸는 모두의 브랜드입니다. 아시아캣은 K-뷰티 아티스트의 아트와 테크니션의 콜라보로 탄생 되었으며, 그 가치를 담아 아시아로 전파하고 점차 세계 각국의 미와 문화 속에 아시아캣의 철학과 정서를 융합시켜 아시아캣 뷰티스트 인재를 양성 시키는데 그 목적이 있습니다.</p>
+                        <div class="nums">
+                            <p class="num-tit">아시아캣 뷰티아카데미는 뷰티를 꿈꾸는 <br>모든 이들과 미래를 함께 할 새로운 트렌드입니다.</p>
+                            <ul>
+                                <li>
+                                    <span class="num">01</span>
+                                    <p>뷰티문화</p>
+                                </li>
+                                <li>
+                                    <span class="num">02</span>
+                                    <p>뷰티글로벌</p>
+                                </li>
+                                <li>
+                                    <span class="num">03</span>
+                                    <p>뷰티교육</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="sect bofb">
+                        <div class="area">
+                            <h4 class="title">
+                                <small>Best of Best</small>
+                                영화, 드라마 제작 협찬 및 참여<br>
+                                국내외 시상식 및 아시아모델페스티벌 참여
+                            </h4>
+                            <div class="img"><img src="/images/img/img-sub0101.png" alt=""></div>
+                        </div>
+                    </section>
+                    <section class="sect facility">
+                        <div class="flex-area">
+                            <div class="text">
+                                <h5 class="tit">
+                                    <small>아시아캣 뷰티 아카데미 교육시설</small>
+                                    아시아캣 뷰티 아카데미에서는<br>최적의 교육환경을 우선으로 하여, 수강생 및 예비창업자를 위한 교육장소를 제공하고 있습니다.
+                                </h5>
+                            </div>
+                            <div class="gal-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot01.jpg')">
+                                            <p>아시아캣 뷰티 본사</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot02.jpg')">
+                                            <p>아시아캣 뷰티 본사2</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot01.jpg')">
+                                            <p>아시아캣 뷰티 본사3</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot02.jpg')">
+                                            <p>아시아캣 뷰티 본사4</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot01.jpg')">
+                                            <p>아시아캣 뷰티 본사5</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot02.jpg')">
+                                            <p>아시아캣 뷰티 본사6</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controller">
+                                    <div class="control-btn prev"></div>
+                                    <div class="control-btn next"></div>
+                                </div>
+                            </div>
+                            <div class="thumb-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot01.jpg')"><span class="active" aria-hidden="true"></span></div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot02.jpg')"><span class="active" aria-hidden="true"></span></div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot01.jpg')"><span class="active" aria-hidden="true"></span></div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot02.jpg')"><span class="active" aria-hidden="true"></span></div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot01.jpg')"><span class="active" aria-hidden="true"></span></div>
+                                        <div class="swiper-slide" style="background-image:url('/images/img/img-spot02.jpg')"><span class="active" aria-hidden="true"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sect icons">
+                        <h4 class="title">전혀 다른 차원의 뷰티아카데미</h4>
+                        <a href="" class="btn btn-basic btn-lg"><span>상담신청</span></a>
+                        <ul class="icon-lists">
+                            <li class="icon1">국가 자격증 합격률 93%</li>
+                            <li class="icon2">국내 뷰티학과 진학 97%</li>
+                            <li class="icon3">취업연계 시스템의 세분화</li>
+                            <li class="icon4">취업 선배들의 멘토링 시스템</li>
+                            <li class="icon5">국내/해외 뷰티산업 대회수상</li>
+                            <li class="icon6">창업 지원</li>
+                        </ul>
+                    </section>
+                    <section class="sect media">
+                        <h5 class="tit">아시아캣뷰티 MEDIA</h5>
+                        <ul class="video-lists">
+                            <li>
+                                <a href="#video" style="background-image:url('/images/img/img-video.jpg');" data-toggle="videoModal"></a>
+                                <div class="info" aria-hidden="true">
+                                    <p class="tit">아시아캣뷰티 홍보영상 제목1</p>
+                                    <p class="desc">아시아캣뷰티 홍보영상 설명내용1</p>
+                                    <p class="src">https://www.youtube.com/embed/vVGvI3n9QFs</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#video" style="background-image:url('/images/img/img-video.jpg');" data-toggle="videoModal"></a>
+                                <div class="info" aria-hidden="true">
+                                    <p class="tit">아시아캣뷰티 홍보영상 제목2</p>
+                                    <p class="desc">아시아캣뷰티 홍보영상 설명내용2</p>
+                                    <p class="src">https://www.youtube.com/embed/dTZxq0Ca9XI</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#video" style="background-image:url('/images/img/img-video.jpg');" data-toggle="videoModal"></a>
+                                <div class="info" aria-hidden="true">
+                                    <p class="tit">아시아캣뷰티 홍보영상 제목3</p>
+                                    <p class="desc">아시아캣뷰티 홍보영상 설명내용3</p>
+                                    <p class="src">https://www.youtube.com/embed/6YIQV4oq0zw</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#video" style="background-image:url('/images/img/img-video.jpg');" data-toggle="videoModal"></a>
+                                <div class="info" aria-hidden="true">
+                                    <p class="tit">아시아캣뷰티 홍보영상 제목4</p>
+                                    <p class="desc">아시아캣뷰티 홍보영상 설명내용4</p>
+                                    <p class="src">https://www.youtube.com/embed/1PbZmRm9cGI</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        var thumb = new Swiper(".thumb-slider .swiper-container", {
+            loop: false,
+        });
+        var gal = new Swiper(".gal-slider .swiper-container", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".gal-slider .control-btn.next",
+                prevEl: ".gal-slider .control-btn.prev",
+            },
+            thumbs: {
+                swiper: thumb,
+            },
+        });
+
+        $('[data-toggle="videoModal"]').videoModal();
+    </script>
+</body>
+</html>
